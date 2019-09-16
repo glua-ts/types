@@ -1,0 +1,60 @@
+{
+  "name": "@glua-ts/types",
+  "version": "0.1.0",
+  "description": "Typings generation for garrysmod",
+  "types": "typings/garrysmod.d.ts",
+  "files": [
+    "/typings"
+  ],
+  "scripts": {
+    "wiki:build": "npm run wiki:fetch && npm run wiki:generate",
+    "wiki:fetch": "ts-node ./src/fetch.ts --verbose",
+    "wiki:parse": "ts-node ./src/parse.ts --verbose",
+    "wiki:generate": "ts-node ./src/generate.ts --verbose",
+    "lint": "eslint --ext .ts ./src",
+    "lint:fix": "npm run lint -- --fix",
+    "precommit": "npm run lint",
+    "release": "npm run precommit && standard-version",
+    "publish": "npm run precommit && npm run build && git push --follow-tags origin master && npm publish",
+    "clean": "rimraf dist"
+  },
+  "license": "MIT",
+  "author": "Nurdism <https://github.com/nurdism>",
+  "homepage": "https://github.com/glua-ts/types#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glua-ts/types.git"
+  },
+  "bugs": {
+    "url": "https://github.com/glua-ts/types/issues"
+  },
+  "keywords": [
+    "gmod",
+    "garrysmod",
+    "glua",
+    "lua",
+    "tool",
+    "typings",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/bluebird": "^3.5.27",
+    "@types/fs-extra": "^8.0.0",
+    "@types/node": "^12.7.4",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
+    "axios": "^0.19.0",
+    "bluebird": "^3.5.5",
+    "cac": "^6.5.3",
+    "chalk": "^2.4.2",
+    "eslint": "^6.3.0",
+    "filenamify": "^4.1.0",
+    "fs-extra": "^8.1.0",
+    "globby": "^10.0.1",
+    "pretty-ms": "^5.0.0",
+    "rimraf": "^3.0.0",
+    "standard-version": "^7.0.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  }
+}

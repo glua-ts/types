@@ -1,0 +1,48 @@
+# IntelliJ
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# VS/Code
+.vscode/
+.vs/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log/Temp files
+.tmp/
+tmp/
+*.tmp
+.logs/
+logs/
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Lock files
+yarn.lock
+package-lock.json
+
+# Misc
+*.tgz
+
+# Node/Project
+/node_modules/
+/data/
