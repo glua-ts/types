@@ -56,18 +56,18 @@ const overrides: IOverrides = {
   global: {
     typings: [
       'declare const SERVER: boolean',
-      'declare const CLEINT: boolean',
+      'declare const CLIENT: boolean',
       'declare const MENU: boolean',
       'declare const GAMEMODE: Gamemode',
       'declare const GM: Gamemode',
 
-      'declare const SEWP: _SEWP',
+      'declare const SWEP: SWEP',
       'declare const ENT: _TOOL',
       'declare const TOOL: _ENTITY',
       'declare const SANDBOX: _SANDBOX',
       'declare const EFFECT: _EFFECT',
 
-      'type _SEWP    = WeaponHooks',
+      'type _SWEP    = WeaponHooks',
       'type _TOOL    = ToolHooks',
       'type _ENTITY  = EntityHooks',
       'type _SANDBOX = SandboxHooks',
@@ -338,19 +338,19 @@ const overrides: IOverrides = {
       },
     },
     'jit/attach': {
-      params: { 'callback': { type: 'any' }},
+      params: { 'callback': { type: 'any' } },
     },
     'spawnmenu/AddPropCategory': {
-      params: { 'contents': { type: 'any' }},
+      params: { 'contents': { type: 'any' } },
     },
     'Global/AddCSLuaFile': {
-      params: { 'file': { optional: true }},
+      params: { 'file': { optional: true } },
     },
     'Global/IncludeCS': {
-      params: { 'filename': { optional: true }},
+      params: { 'filename': { optional: true } },
     },
     'Global/CreateConVar': {
-      params: { 'helptext': { optional: true }},
+      params: { 'helptext': { optional: true } },
     },
     'concommand/Add': {
       params: {
