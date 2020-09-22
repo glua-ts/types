@@ -61,13 +61,13 @@ const overrides: IOverrides = {
       'declare const GAMEMODE: Gamemode',
       'declare const GM: Gamemode',
 
-      'declare const SEWP: _SEWP',
+      'declare const SWEP: _SWEP',
       'declare const ENT: _TOOL',
       'declare const TOOL: _ENTITY',
       'declare const SANDBOX: _SANDBOX',
       'declare const EFFECT: _EFFECT',
 
-      'type _SEWP    = WeaponHooks',
+      'type _SWEP    = WeaponHooks',
       'type _TOOL    = ToolHooks',
       'type _ENTITY  = EntityHooks',
       'type _SANDBOX = SandboxHooks',
